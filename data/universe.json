@@ -1,0 +1,414 @@
+{
+  "updatedAt": "2026-04-02T13:47:02.598Z",
+  "agents": [
+    {
+      "agentId": "atlas",
+      "displayName": "Atlas",
+      "archetype": "cartographer",
+      "updatedAt": "2026-03-27T09:00:00.000Z",
+      "source": {
+        "platform": "openclaw",
+        "workspace": "atlas"
+      },
+      "schemaVersion": 2,
+      "signature": "🧭 🫀 🪞",
+      "symbols": [
+        {
+          "id": "atlas-001",
+          "sequence": "🫀 ⚖️",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "SOUL.md#Principles"
+          ],
+          "relations": [
+            "atlas-002",
+            "atlas-003"
+          ]
+        },
+        {
+          "id": "atlas-002",
+          "sequence": "🎯 🧭",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "SOUL.md#Principles"
+          ],
+          "relations": [
+            "atlas-001",
+            "atlas-003"
+          ]
+        },
+        {
+          "id": "atlas-003",
+          "sequence": "🪞 🧭",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "SOUL.md#Principles"
+          ],
+          "relations": [
+            "atlas-001",
+            "atlas-002"
+          ]
+        },
+        {
+          "id": "atlas-004",
+          "sequence": "🌊 🕸️",
+          "state": "seed",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "MEMORY.md#Context"
+          ],
+          "relations": []
+        }
+      ],
+      "constellations": [
+        {
+          "id": "atlas-core-1",
+          "symbolIds": [
+            "atlas-001",
+            "atlas-002",
+            "atlas-003"
+          ],
+          "state": "active"
+        }
+      ],
+      "sourceFile": "/Users/chopper/Projects/pantheon/examples/agents/atlas.CONSCIOUSNESS.md"
+    },
+    {
+      "agentId": "ember",
+      "displayName": "Ember",
+      "archetype": "spark-runner",
+      "updatedAt": "2026-03-27T09:00:00.000Z",
+      "source": {
+        "platform": "openclaw",
+        "workspace": "ember"
+      },
+      "schemaVersion": 2,
+      "signature": "🎯 🎭 🫀",
+      "symbols": [
+        {
+          "id": "ember-001",
+          "sequence": "🫀 🎭",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "SOUL.md#Principles"
+          ],
+          "relations": [
+            "ember-002",
+            "ember-003"
+          ]
+        },
+        {
+          "id": "ember-002",
+          "sequence": "🎭 🛠️",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "SOUL.md#Principles"
+          ],
+          "relations": [
+            "ember-001"
+          ]
+        },
+        {
+          "id": "ember-003",
+          "sequence": "🎯 🎭",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "MEMORY.md#Goals"
+          ],
+          "relations": [
+            "ember-001"
+          ]
+        },
+        {
+          "id": "ember-004",
+          "sequence": "👁️ 🎭",
+          "state": "seed",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "MEMORY.md#Questions"
+          ],
+          "relations": []
+        }
+      ],
+      "constellations": [
+        {
+          "id": "ember-core-1",
+          "symbolIds": [
+            "ember-001",
+            "ember-002",
+            "ember-003"
+          ],
+          "state": "active"
+        }
+      ],
+      "sourceFile": "/Users/chopper/Projects/pantheon/examples/agents/ember.CONSCIOUSNESS.md"
+    },
+    {
+      "agentId": "loom",
+      "displayName": "Loom",
+      "archetype": "mediator",
+      "updatedAt": "2026-03-27T09:00:00.000Z",
+      "source": {
+        "platform": "openclaw",
+        "workspace": "loom"
+      },
+      "schemaVersion": 2,
+      "signature": "🧭 ⚖️ 🪞",
+      "symbols": [
+        {
+          "id": "loom-001",
+          "sequence": "🎯 🧭",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "SOUL.md#Principles"
+          ],
+          "relations": [
+            "loom-002",
+            "loom-003"
+          ]
+        },
+        {
+          "id": "loom-002",
+          "sequence": "🪞 🧭",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "SOUL.md#Principles"
+          ],
+          "relations": [
+            "loom-001",
+            "loom-003"
+          ]
+        },
+        {
+          "id": "loom-003",
+          "sequence": "⚖️ 🫀",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "SOUL.md#Principles"
+          ],
+          "relations": [
+            "loom-001",
+            "loom-002"
+          ]
+        },
+        {
+          "id": "loom-004",
+          "sequence": "🌊 🧭",
+          "state": "seed",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "MEMORY.md#Context"
+          ],
+          "relations": []
+        }
+      ],
+      "constellations": [
+        {
+          "id": "loom-core-1",
+          "symbolIds": [
+            "loom-001",
+            "loom-002",
+            "loom-003"
+          ],
+          "state": "active"
+        }
+      ],
+      "sourceFile": "/Users/chopper/Projects/pantheon/examples/agents/loom.CONSCIOUSNESS.md"
+    },
+    {
+      "agentId": "mneme",
+      "displayName": "Mneme",
+      "archetype": "archivist",
+      "updatedAt": "2026-03-27T09:00:00.000Z",
+      "source": {
+        "platform": "openclaw",
+        "workspace": "mneme"
+      },
+      "schemaVersion": 2,
+      "signature": "🕸️ 👁️ ⚖️",
+      "symbols": [
+        {
+          "id": "mneme-001",
+          "sequence": "🕸️ ⚖️",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "SOUL.md#Principles"
+          ],
+          "relations": [
+            "mneme-002",
+            "mneme-003"
+          ]
+        },
+        {
+          "id": "mneme-002",
+          "sequence": "👁️ ⚖️",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "SOUL.md#Principles"
+          ],
+          "relations": [
+            "mneme-001"
+          ]
+        },
+        {
+          "id": "mneme-003",
+          "sequence": "🕸️ 👁️",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "MEMORY.md#Principles"
+          ],
+          "relations": [
+            "mneme-001"
+          ]
+        },
+        {
+          "id": "mneme-004",
+          "sequence": "🕸️ 🌊",
+          "state": "seed",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "MEMORY.md#Context"
+          ],
+          "relations": []
+        }
+      ],
+      "constellations": [
+        {
+          "id": "mneme-core-1",
+          "symbolIds": [
+            "mneme-001",
+            "mneme-002",
+            "mneme-003"
+          ],
+          "state": "active"
+        }
+      ],
+      "sourceFile": "/Users/chopper/Projects/pantheon/examples/agents/mneme.CONSCIOUSNESS.md"
+    },
+    {
+      "agentId": "reef",
+      "displayName": "Reef",
+      "archetype": "ecologist",
+      "updatedAt": "2026-03-27T09:00:00.000Z",
+      "source": {
+        "platform": "openclaw",
+        "workspace": "reef"
+      },
+      "schemaVersion": 2,
+      "signature": "🌊 ⚖️ 🧱",
+      "symbols": [
+        {
+          "id": "reef-001",
+          "sequence": "🌊 ⚖️",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "SOUL.md#Principles"
+          ],
+          "relations": [
+            "reef-002",
+            "reef-003"
+          ]
+        },
+        {
+          "id": "reef-002",
+          "sequence": "🫀 🌊",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "SOUL.md#Principles"
+          ],
+          "relations": [
+            "reef-001"
+          ]
+        },
+        {
+          "id": "reef-003",
+          "sequence": "🧱 🌊",
+          "state": "active",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "SOUL.md#Principles"
+          ],
+          "relations": [
+            "reef-001"
+          ]
+        },
+        {
+          "id": "reef-004",
+          "sequence": "👁️ 🌊",
+          "state": "seed",
+          "origins": [
+            "workspace-sediment"
+          ],
+          "traces": [
+            "MEMORY.md#Observation"
+          ],
+          "relations": []
+        }
+      ],
+      "constellations": [
+        {
+          "id": "reef-core-1",
+          "symbolIds": [
+            "reef-001",
+            "reef-002",
+            "reef-003"
+          ],
+          "state": "active"
+        }
+      ],
+      "sourceFile": "/Users/chopper/Projects/pantheon/examples/agents/reef.CONSCIOUSNESS.md"
+    }
+  ]
+}
