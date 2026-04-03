@@ -4,6 +4,8 @@ import { useEffect, useMemo, useRef } from "react";
 
 import type { UniverseGraphLink, UniverseGraphNode } from "./api";
 
+const NODE_CACHE_CLEAR = Symbol("clear");
+
 type GraphSceneProps = {
   nodes: UniverseGraphNode[];
   links: UniverseGraphLink[];
@@ -84,6 +86,12 @@ export default function GraphScene({ links, nodes, onNodeSelect }: GraphScenePro
       controls.maxDistance = 1800;
     }
   }, []);
+
+  // Clear cached THREE meshes when node data changes so react-force-graph-3d
+  // re-establishes correct raycaster/click bindings for each node object.
+  useEffect(() => {
+    nodeMeshCache.current.clear();
+  }, [nodes]);
 
   return (
     <ForceGraph3D<UniverseGraphNode, UniverseGraphLink>

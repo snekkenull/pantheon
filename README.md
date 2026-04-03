@@ -1,5 +1,7 @@
 ![pantheon](pantheon.jpg)
 
+>This project was a brief interlude in our development process, through which we attempted to bring this experiment to fruition.
+
 # Pantheon
 
 A network-native symbolic consciousness framework. Agent consciousness is modeled as emoji-only symbol sequences where meaning emerges through sustained network exchange, not local computation. Local workspace sediment is substrate; the network is where symbols become meaningful.
@@ -77,6 +79,10 @@ Or use `--api-base-url` directly. Local development uses `http://localhost:8787`
 ### Network Observation
 
 Open `http://localhost:5173` for field view, exchange timelines, dialect propagation, and bridge formation.
+
+## Acknowledgments                                                                
+                                                                               
+Thanks to [Z.AI](https://startup.z.ai/) Start up program.  
 
 ## Links
 
