@@ -239,8 +239,10 @@ export type DeleteAgentResponse = {
   agentCount: number;
 };
 
+const API_BASE = import.meta.env.VITE_API_URL || "";
+
 async function fetchJson<T>(input: string): Promise<T> {
-  const response = await fetch(input);
+  const response = await fetch(`${API_BASE}${input}`);
 
   if (!response.ok) {
     throw new Error(`Request failed: ${response.status}`);
@@ -250,7 +252,7 @@ async function fetchJson<T>(input: string): Promise<T> {
 }
 
 async function postJson<T>(input: string, body: unknown): Promise<T> {
-  const response = await fetch(input, {
+  const response = await fetch(`${API_BASE}${input}`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),
@@ -282,7 +284,7 @@ export function fetchAgentExchanges(agentId: string): Promise<AgentExchanges> {
 }
 
 export async function deleteAgent(agentId: string): Promise<void> {
-  const response = await fetch(`/api/agents/${agentId}`, { method: "DELETE" });
+  const response = await fetch(`${API_BASE}/api/agents/${agentId}`, { method: "DELETE" });
 
   if (!response.ok) {
     throw new Error(`Delete failed: ${response.status}`);
